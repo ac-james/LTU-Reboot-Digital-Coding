@@ -61,7 +61,7 @@ if ( num === 50 ) {
     console.log('number is less than 50');
 }
 */
-
+/*
 function productDiscount() {
 
   if(quantity > 2 ) {
@@ -74,7 +74,7 @@ function productDiscount() {
 }
 
 productDiscount();
-
+*/
 /*switch (colour) {
     case 'grey':
       console.log('Correct');
@@ -91,7 +91,7 @@ productDiscount();
 }
 */
 
-function drinkOrder(drink, size) {
+/*function drinkOrder(drink, size) {
 
   switch(drink) {
     case 'cola' :
@@ -106,10 +106,10 @@ function drinkOrder(drink, size) {
       break;
   }
 
-}
+}*/
 
 
-drinkOrder('cola', 'X-Large');
+/*drinkOrder('cola', 'X-Large');
 drinkOrder('lemonade', 'Medium');
 drinkOrder('orangeade', 'Small')
 
@@ -128,9 +128,9 @@ function calculator(num1, num2, operator) {
       break;
   }
 
-}
+}*/
 
-calculator(1, 1, '+');
+/*calculator(1, 1, '+');
 calculator(10, 2, '-');
 calculator(5, 5, '*');
 
@@ -157,3 +157,51 @@ if( temperature >= 30 || season === 'Spring') {
 } else {
   console.log('You should wear trousers and a jumper');
 }
+*/
+/*
+let product = [  //this is an array
+  productName,
+  price,
+  quantity,
+  inStock,
+  discountAmount
+];
+
+let firstItem = product[0];
+let secondItem = product [1]
+let lastItem = product[4];
+*/
+
+let product = {
+  productName : 'Apples',
+  price: 1.29,
+  quantity: 6,
+  inStock: true,
+  discountAmount: 0.35,
+  coloursAvailable: ['Green', 'Red', 'Yellow', 'Pink'],
+};
+
+product.price = 2.09;
+
+/*
+ console.log( product.price ); //Dot notation
+ console.log( product ['price']); //Square Bracket notation
+
+ console.log( product.quantity );
+ console.log( product['quantity']);
+ */
+
+ //let nameofProduct = product.productName;
+ //let discount = product['discountAmount'];
+
+//let yellow = product['coloursAvailable'][2]);
+
+// delete product.price;  //How to delete a property from an object
+
+product.shape = 'sphere';
+
+// console.log( product );
+
+
+
+
