@@ -24,22 +24,22 @@ function showProductName() { // declaring (creating) a function
 
 showProductName(); // using a function /invoke a function (call the function)
 
-let firstName = 'Elin';
+//let firstName = 'Elin';
 
 function greeting( name ) {
   console.log(name);
 }
 
-greeting('Ann');
+/*greeting('Ann');
 greeting(firstName);
-
+*/
 /*function totalPrice( productPrice, productQuantity ) {
   console.log( productPrice * productQuantity );
 }
 
 totalPrice( price, quantity ); */
 
-let totalPrice = ( productPrice, productQuantity ) => {
+/*let totalPrice = ( productPrice, productQuantity ) => {
     console.log( productPrice * productQuantity );
   }
 
@@ -53,10 +53,107 @@ let checkAvailability = productInStock => console.log( productInStock );
 
 // checkAvailability( inStock );
 
-let num = 40;
+/*let num = 40;
 
 if ( num === 50 ) {
   console.log('number is higher than 50');
 } else {
     console.log('number is less than 50');
+}
+*/
+
+function productDiscount() {
+
+  if(quantity > 2 ) {
+    let newPrice = ( price * quantity ) - discountAmount; //BODMAS
+    console.log( newPrice );
+  } else {
+    console.log( price * quanitity );
+  }
+
+}
+
+productDiscount();
+
+/*switch (colour) {
+    case 'grey':
+      console.log('Correct');
+      break;
+    case 'orange':
+      console.log('Correct');
+      break;
+    case 'blue':
+      console.log('Correct');
+      break;
+    default:
+      console.log('Incorrect');
+      break;
+}
+*/
+
+function drinkOrder(drink, size) {
+
+  switch(drink) {
+    case 'cola' :
+      console.log(drink, size);
+      break;
+    case 'lemonade' :
+      console.log(drink, size);
+      break;
+    default:
+      //console.log("We don't currently have a " + size + " " + drink");
+      console.log(`We don't currently have a ${size} ${drink}, apologies`);
+      break;
+  }
+
+}
+
+
+drinkOrder('cola', 'X-Large');
+drinkOrder('lemonade', 'Medium');
+drinkOrder('orangeade', 'Small')
+
+function calculator(num1, num2, operator) {
+
+  switch(operator) {
+    case ' + ' :
+      console.log( `${num1 + num2} = ${num1 + num2}`);
+      break;
+    case '-':
+      console.log( `${num1 - num2} = ${num1 - num2}`);
+    case '*':
+        console.log( `${num1 * num2} = ${num1 * num2}`);
+    default :
+      console.log(`${operator} does not exist`);
+      break;
+  }
+
+}
+
+calculator(1, 1, '+');
+calculator(10, 2, '-');
+calculator(5, 5, '*');
+
+let firstName = 'Ann';
+let lastName = 'James';
+
+let fullName = firstName + lastName;
+
+console.log( fullName);
+
+let num = 55;
+
+let word = '65';
+
+let numWord = `${num} ${word}`;
+
+console.log(numWord);
+
+let temperature = 30;
+let season = 'Spring';
+
+if( temperature >= 30 || season === 'Spring') {
+  console.log('You should wear just a T-shirt and shorts');
+} else {
+  console.log('You should wear trousers and a jumper');
 }
